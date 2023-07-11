@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="no">
+<head>
+	<meta charset="utf-8">
+	<link href="../styles/mobileView.css" id="stylesheet" rel="stylesheet">
+	<link href="../styles/desktopView.css" id="stylesheet2" rel="stylesheet">
+	<title>Trekroneren</title>
+</head>
+<body onload="changeText();">
+	<!--mum015 has edited the folowing lines of code: -->
+	<header>
+		<a href="../html/index_no.html"><img alt="header" id="header" src=
+		"../images/header.jpg"></a>
+
+		<!--een014 has edited the folowing lines of code: -->
+		<nav>
+			<div class="menu-wrap">
+				<input class="toggler" type="checkbox">
+				<div class="hamburger">
+					<div></div>
+				</div>
+				<div class="menu">
+					<div>
+						<div>
+							<ul>
+								<li>
+									<a href="../html/index_no.html">Hjem</a>
+								</li>
+								<li class="current">
+									<a href="../html/choice_no.html">Meny</a>
+								</li>
+								<li>
+									<a href="../html/findus_no.html">Finn oss</a>
+								</li>
+								<li>
+									<a href="../html/aboutus_no.html">Om oss</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="flags">
+	      	<li class="current">
+				      <a href="norsk.html"> <img class="Norsk" alt="Norsk" src="../images/no.png"></a>
+	      	</li>
+					<li>
+							<a href="english.html"> <img class="English" alt="English" src="../images/gb.png"></a>
+					</li>
+			  	<li>
+					  	<a href="deutsch.html"> <img class="Deutsch" alt="Deutsch" src="../images/de.png"></a>
+			  	</li>
+					<li>
+							<a href="espanol.html"> <img class="Español" alt="Español" src="../images/es.png"></a>
+					</li>
+					<li>
+					 		<a href="francais.html"> <img class="Français" alt="Français" src="../images/fr.png"></a>
+					</li>
+			  	<li>
+				  	 	<a href="italiano.html"> <img class="Italiano" alt="Italiano" src="../images/it.png"></a>
+			  	</li>
+					<li>
+							<a href="中国人.html"> <img class="中国人" alt="中国人" src="../images/cn.png"></a>
+					</li>
+	</div>
+
+	<main>
+		<article class="menu_h1">
+			<h1>Pølser</h1>
+		</article>
+		<script>
+
+		var counter = 0;
+
+		function changeText() {
+			var quotes = new Array();
+			quotes[0] = "Ny! Prøv månedens nye pølse! Trekroneren-spesial";
+			quotes[1] = "../images/special.jpg"
+			quotes[2] = "Vekt 150 Gram";
+			quotes[3] = "68 NOK";
+			quotes[4] = "Reinsdyr - Kjøttpølse med einebær og viltkrydder";
+			quotes[5] = "../images/reindeer.jpg"
+			quotes[6] = "Vekt 150 Gram";
+			quotes[7] = "65 NOK";
+
+			if (counter < 1) {
+				document.getElementById("headerSlide").innerHTML = quotes[0];
+
+				document.getElementById("pictureSlide").src = quotes[1];
+				/*document.pictureSlide.src = quotes[1];*/
+				document.getElementById("paragraphSlide").innerHTML = quotes[2];
+				document.getElementById("prizeSlide").innerHTML = quotes[3];
+				document.getElementById("headerSlide").style.lineHeight = "1.3";
+				counter++;
+			} else {
+				document.getElementById("headerSlide").innerHTML = quotes[4];
+				document.getElementById("pictureSlide").src = quotes[5];
+				/*document.pictureSlide.src = quotes[5];*/
+				document.getElementById("paragraphSlide").innerHTML = quotes[6];
+				document.getElementById("prizeSlide").innerHTML = quotes[7];
+				document.getElementById("headerSlide").style.lineHeight = "1.3";
+				counter = 0;
+			}
+			setTimeout(function() {
+				changeText()
+			}, 4000);
+		}
+
+	</script>
+
+		<div class="slideShow">
+			<article class="hot_dog_type_slide">
+				<h2 id="headerSlide"></h2><img alt="Picture of a hotdog" id="pictureSlide" src="../images/special.jpg">
+				<p id="paragraphSlide"></p>
+				<p id="prizeSlide"></p>
+			</article>
+		</div><!--yuh017 has edited the folowing lines of code: -->
+		<div class="meny">
+			<article class="hot_dog_type">
+				<h2>Ostepølse med ost og bacon</h2>
+				<p>Vekt 150/250 Gram</p>
+				<p>65/95 NOK</p>
+			</article>
+			<article class="hot_dog_type">
+				<h2>Jagdwurst - Villviltpølse med urtekrydder og pepper</h2>
+				<p>Vekt 150/250 Gram</p>
+				<p>65/95 NOK</p>
+			</article>
+			<article class="hot_dog_type">
+				<h2>San Fransisco pølse - Inneholder hvitløk og chili</h2>
+				<p>Vekt 150/250 Gram</p>
+				<p>65/95 NOK</p>
+			</article>
+			<article class="hot_dog_type">
+				<h2>Røkt bratwurst med merian, karve frø og karri</h2>
+				<p>Vekt 150 Gram</p>
+				<p>65 NOK</p>
+			</article>
+			<article class="hot_dog_type">
+				<h2>Varm chilipølse med ekstra sterk chili og pepper</h2>
+				<p>Vekt 150 Gram</p>
+				<p>65 NOK</p>
+			</article>
+			<article class="hot_dog_type">
+				<h2>Frankfurterpølse med løk og allehånde</h2>
+				<p>Vekt 150 Gram</p>
+				<p>65 NOK</p>
+			</article>
+			<article class="hot_dog_type">
+				<h2>Kabanossi pølse med kajennepepper og hvitløk</h2>
+				<p>Vekt 150/250 Gram</p>
+				<p>65 NOK</p>
+			</article>
+			<article class="hot_dog_type">
+				<h2>Krakauer pølse med muskat og hvitløk</h2>
+				<p>Vekt 150 Gram</p>
+				<p>65 NOK</p>
+			</article>
+			<article class="hot_dog_type">
+				<h2>Pølsekjøtt av lammekjøtt med hvitløk og krydder fra provence</h2>
+				<p>Vekt 150 Gram</p>
+				<p>65 NOK</p>
+			</article>
+		</div>
+	</main>
+	<footer>
+		Copyright (C) 2021. Group 12: mum015, yuh017, een014. DIKULT105.
+	</footer>
+</body>
+</html>
