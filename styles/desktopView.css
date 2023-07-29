@@ -1,0 +1,589 @@
+/* Desktop version */
+/*mum015 has edited the folowing lines of code: */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@media only screen and (min-width: 1000px) {
+
+/*yuh017 has edited the folowing lines of code: */
+html {
+  margin-top: -.5em;
+  margin-bottom: 5em;
+}
+
+header {
+	margin-left: -8px;
+	margin-right: -8px;
+  background: #590f11;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 120%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+body {
+  background: #ddd;
+}
+
+a {
+	font-family: Lato;
+	font-weight: bold;
+}
+
+li {
+  margin-bottom: .25em;
+}
+
+h1 {
+	font-family: Lato;
+  font-size: 250%;
+}
+
+h2 {
+	font-family: Lato;
+  font-size: 200%;
+}
+
+
+p {
+	font-family: Lato;
+	font-size: 16px;
+	line-height: 2;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  color: black;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+footer {
+  font-family: Lato;
+  color: white;
+  background: black;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: .75em;
+  padding: 1em;
+}
+
+/* PICTURES: */
+/*mum015 has edited the folowing lines of code: */
+#phone {
+	width: 50px;
+	height: 40px;
+}
+
+#facebook {
+	width: 50px;
+	height: 50px;
+}
+
+#pictureSlide{
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#trekroner_home {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.about_us img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.English {
+  width: 75px;
+  height: 50px;
+}
+
+.Deutsch {
+  width: 75px;
+  height: 50px;
+}
+
+.FranÃ§ais {
+  width: 75px;
+  height: 50px;
+}
+
+.Norsk {
+  width: 75px;
+  height: 50px;
+}
+
+.Italiano {
+  width: 75px;
+  height: 50px;
+}
+
+.EspaÃ±ol {
+  width: 75px;
+  height: 50px;
+}
+
+.ä¸­å›½äºº {
+  width: 75px;
+  height: 50px;
+}
+
+.flags {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 48px;
+  margin-right: 48px;
+  list-style: none;
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 5px 5px #c7c7c7;
+}
+
+.flags a:hover {
+  outline: #FFDD00 solid 3px;
+  padding: 2px;
+  padding-top: 41px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.flags .current a{
+  outline: #c4c4c4 solid 3px;
+  padding: 2px;
+  padding-top: 41px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #c4c4c4;
+}
+
+/*NAVIGATION*/
+/*een014 has edited the folowing lines of code: */
+.menu-wrap .toggler {
+	display: none;
+}
+
+
+/* Add a black background color to the top navigation */
+.menu-wrap {
+  background-color: #590f11;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.menu-wrap .menu > div > div > ul > li > a {
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ text-align: center;
+}
+
+/* Change the color of links on hover */
+.menu-wrap .menu > div > div > ul > li > a:hover {
+  background-color: #dddddd;
+  color: black;
+  text-align: center;
+}
+
+/* Add a color to the active/current link EVT ELTTE DETTE */
+.menu-wrap .menu > div > div > ul > li > a:active {
+  background-color: #FFDD00;
+  color: black;
+  text-align: center;
+
+}
+
+/* THIS IS NOT WORKING AS IT SHOULD !! */
+.menu-wrap .menu > div > div > ul > .current a {
+	background-color: #dddddd;
+	color: black;
+	text-align: center;
+	font-size: 17px;
+	overflow: hidden;
+
+}
+
+
+/*Following code is inspired from
+https://www.w3schools.com/howto/howto_js_topnav.asp
+*/
+
+.menu-wrap .menu > div > div > ul {
+    --number-of-nav-items: 4;
+    /* Removes the dot in front of a list item */
+    list-style: none;
+    /* Using grid to wrap the navigation bar */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+.menu-wrap .menu > div > div > ul {
+	list-style: none;
+	display: grid;
+}
+
+/*EVERYTHING UNDER HERE IS IN THE MAIN:*/
+/*een014 and yuh017 has edited the folowing lines of code: */
+
+/*INDEX PAGE*/
+.index {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 12;
+}
+
+.index_h1 {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.welcome {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+}
+
+.gallary {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+   box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+}
+
+.contact_us {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+}
+
+/*MENU PAGE*/
+
+.slideShow {
+  font-family: Lato;
+	font-size: 16px;
+	line-height: 2;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.meny {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 5em;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 5;
+  grid-row-end: 12;
+}
+
+.menu_h1 {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.hot_dog_type {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+}
+
+.hot_dog_type_slide {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  padding: 2rem;
+
+}
+
+/*CHOICE PAGE*/
+
+.choice {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 5em;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 12;
+}
+
+.choice_h1 {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.choice a:hover {
+  color: #A9A9A9;
+  text-align: center;
+}
+
+.food {
+  display: flex;
+  flex-flow: column;
+  margin-top: 0em;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+}
+
+.drinks {
+  display: flex;
+  flex-flow: column;
+  margin-top: 0em;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+}
+
+.drink_h1 {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.drink_main img {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+}
+
+.food a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#choice_hotdog {
+  margin-top: 3em;
+}
+
+.drinks a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 100%;
+}
+
+/*DRINKS PAGE*/
+
+.drink_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 5em;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 12;
+
+}
+
+.drink_product {
+  display: flex;
+  flex-flow: column;
+  margin-top: 0em;
+  background-color: white;
+  text-align: center;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+}
+
+.drink_product img {
+  width: 25%;
+  height: 100%;
+}
+
+/*ABOUT US PAGE*/
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 5em;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 12;
+}
+
+.aboutus_h1 {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.about_us {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+}
+
+/*FIND US PAGE*/
+
+.findus {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 5em;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 12;
+}
+
+.findus_h1 {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.map {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+  height: 90%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map_text {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  box-shadow: 5px 5px #c7c7c7;
+  border-color: #7e7e7e;
+  border-radius: 0.1rem;
+  padding: 2rem;
+}
+
+}
